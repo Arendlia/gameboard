@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+/*barre de navigation*/
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid #93603b;
+
+}
+
+nav h1{
+    color: #4b3617;
+    font-family: 'Lobster', cursive, sans-serif;
+    font-size: 30px;
+
+}
+nav .navig{
+    margin-top: 3px;
+    margin-left: 500px;
+}
+nav .navig a{
+    text-decoration: none;
+    color: #4b3617;
+    margin-right: 10px;
+    border-bottom: 1px solid #4b3617;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+/*header*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    background-image: url(images/banniere.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+header h1{
+    font-family: 'Lobster', cursive, sans-serif;
+    font-size: 60px;
+    margin-top: -20px;
+}
+header h3{
+    font-size: 40px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+header button{
+    padding: 5px 30px;
+    background-color: #fff;
+    color: #4b3617;
+    border-radius: 10px;
+    border-color: #4b3617;
+    outline: none;
+    cursor: pointer;
+}
+
+/*main*/
+.main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .conteneur .jeux{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.main .conteneur .jeux .gauche img{
+    height: 300px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.main .conteneur .jeux.gauche{
+    flex: 0 0 70%;
+}
+
+.main .conteneur .jeux .droite{
+    flex: 0 0 30%;
+    padding:20px;
+    background-color: #93603b;
+    color: #fff;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 8px solid #93603b;
+    background-color: #4b3617;
+    color: #fff;
+    
+}
+
+footer h2{
+   font-size: 30px;
+   border-bottom: 1px solid #fff;
+   width: 10%;
+   padding-bottom: 5px;
+   margin-left: 40px;
+}
+
+footer .services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .services .service{
+    margin-right: 30px;
+}
+
+footer .services .service p{
+    max-width: 300px;
+}
+
+footer #contact {
+    color: #f1d8b1;
+}
+
+@media screen and (max-width:680px){
+    nav{
+      flex-direction: column;
+    }
+
+    nav .navig {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    header h1{
+        font-size: 50px;
+    }
+    header h3{
+        font-size: 20px;
+    }
+
+    .main .jeux{
+        margin:10px;
+    }
+
+    .main .conteneur .jeux .gauche img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main .conteneur .jeux{
+        display: block;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    footer h2{
+        width: 40%;
+    }
+
+    
+}
